@@ -1,0 +1,1 @@
+The code is helpful for recording all the communication with LLMs by a human. This is a simple implementation but can be adapted according to the user needs. At present this code will record the date, time, input prompt and output when the user commuincated with LLM using some prompt in a json file.
