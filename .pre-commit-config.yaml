@@ -1,0 +1,26 @@
+# Install once with: uv run pre-commit install   (or: pipx run pre-commit install)
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.8 # keep in step with the ruff version in uv.lock
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy (strict, via uv)
+        entry: uv run mypy
+        language: system
+        types: [python]
+        pass_filenames: false
+      - id: no-env-files
+        name: refuse to commit .env files
+        entry: bash -c 'echo "Refusing to commit an environment file:" "$@" >&2; exit 1' --
+        language: system
+        files: '(^|/)\.env(\..+)?$'
+        exclude: '(^|/)\.env\.example$'

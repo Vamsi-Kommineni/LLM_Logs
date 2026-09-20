@@ -1,0 +1,320 @@
+[
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": "",
+          "annotations": null,
+          "function_call": null,
+          "reasoning": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "executed_tools": null
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": {
+      "id": "fixture-id",
+      "debug": null,
+      "seed": 1197777955,
+      "usage": null,
+      "usage_breakdown": null,
+      "error": null
+    }
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": "Need",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": " to",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": " answer",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": " with",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": " number",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": " only",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": ".",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": "4",
+          "annotations": null,
+          "function_call": null,
+          "reasoning": null,
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": null,
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null
+        },
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 92,
+      "total_tokens": 110,
+      "completion_time": 0.022976465,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8
+      },
+      "prompt_time": 0.004410355,
+      "prompt_tokens_details": null,
+      "queue_time": 0.14868388,
+      "total_time": 0.02738682
+    },
+    "x_groq": {
+      "id": "fixture-id",
+      "debug": null,
+      "seed": null,
+      "usage": {
+        "completion_tokens": 18,
+        "prompt_tokens": 92,
+        "total_tokens": 110,
+        "completion_time": 0.022976465,
+        "completion_tokens_details": {
+          "reasoning_tokens": 8
+        },
+        "prompt_time": 0.004410355,
+        "prompt_tokens_details": null,
+        "queue_time": 0.14868388,
+        "total_time": 0.02738682
+      },
+      "usage_breakdown": null,
+      "error": null
+    }
+  },
+  {
+    "id": "fixture-id",
+    "choices": [],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 92,
+      "total_tokens": 110,
+      "completion_time": 0.022976465,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8
+      },
+      "prompt_time": 0.004410355,
+      "prompt_tokens_details": null,
+      "queue_time": 0.14868388,
+      "total_time": 0.02738682
+    },
+    "x_groq": null,
+    "service_tier": "on_demand"
+  }
+]

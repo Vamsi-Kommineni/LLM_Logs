@@ -1,0 +1,45 @@
+{
+  "id": "fixture-id",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "4",
+        "role": "assistant",
+        "annotations": null,
+        "executed_tools": null,
+        "function_call": null,
+        "reasoning": "Need to answer with number only.",
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 0,
+  "model": "openai/gpt-oss-20b",
+  "object": "chat.completion",
+  "mcp_list_tools": null,
+  "service_tier": "on_demand",
+  "system_fingerprint": "fp_fixture",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 92,
+    "total_tokens": 110,
+    "completion_time": 0.030996709,
+    "completion_tokens_details": {
+      "reasoning_tokens": 8
+    },
+    "prompt_time": 0.004398188,
+    "prompt_tokens_details": null,
+    "queue_time": 0.296446871,
+    "total_time": 0.035394897
+  },
+  "usage_breakdown": null,
+  "x_groq": {
+    "id": "fixture-id",
+    "debug": null,
+    "seed": 1864202801,
+    "usage": null
+  }
+}

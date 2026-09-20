@@ -1,0 +1,133 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llm-logs"
+version = "0.1.0a1"
+description = "Local-first, provider-agnostic logging of LLM calls with JSONL, SQLite and OpenTelemetry sinks."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Vamsi Kommineni" }]
+keywords = ["llm", "logging", "observability", "opentelemetry", "tracing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: System :: Logging",
+    "Typing :: Typed",
+]
+dependencies = ["pydantic>=2"]
+
+[project.optional-dependencies]
+groq = ["groq>=0.11"]
+openai = ["openai>=1.40"]
+anthropic = ["anthropic>=0.34"]
+otel = [
+    "opentelemetry-sdk>=1.27",
+    "opentelemetry-exporter-otlp-proto-http>=1.27",
+]
+all = ["llm-logs[groq,openai,anthropic,otel]"]
+
+[project.scripts]
+llm-logs = "llm_logs.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Vamsi-Kommineni/LLM_Logs"
+Changelog = "https://github.com/Vamsi-Kommineni/LLM_Logs/blob/master/CHANGELOG.md"
+
+# Development tools live in a dependency group (PEP 735), not in an extra,
+# so they never appear in the published package metadata.
+[dependency-groups]
+dev = [
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "pytest>=8",
+    "pytest-asyncio>=0.24",
+    "pytest-timeout>=2.3",
+    "pytest-cov>=5",
+    "hypothesis>=6.100",
+    # SDKs are installed for tests only: fixtures are parsed into the real
+    # response types so the adapters are checked against the shapes they meet.
+    "groq>=0.11",
+    "openai>=1.40",
+    "anthropic>=0.34",
+    "opentelemetry-sdk>=1.27",
+    "opentelemetry-exporter-otlp-proto-http>=1.27",
+]
+examples = [
+    "fastapi>=0.110",
+    "uvicorn>=0.30",
+    "httpx>=0.27",
+    "groq>=0.11",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llm_logs"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "CHANGELOG.md", "LICENSE", "docs"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+extend-exclude = ["legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM", "RUF", "PT", "S", "T20", "BLE"]
+ignore = [
+    "S101",   # assert is the point of tests; src/ does not use it
+    "BLE001", # a logging library must catch broad exceptions by design
+    "S110",   # same reason: some failures are deliberately swallowed and counted
+    "S112",   # same reason
+    "PT018",  # compound asserts keep related checks on one line; pytest still explains them
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S", "T20", "B017", "PT011", "PT012", "PT017", "RUF001"]
+"examples/**" = ["T20", "S"]
+"benchmarks/**" = ["T20", "S"]
+"scripts/**" = ["T20", "S"]
+# S608: the SQL in these two files is assembled from fixed fragments (column
+# names, WHERE clauses). Every value that comes from a user is a bound parameter.
+"src/llm_logs/cli.py" = ["T20", "S608"]
+"src/llm_logs/sinks/sqlite.py" = ["S608"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]
+warn_unreachable = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+timeout = 60
+addopts = "-ra --strict-markers"
+markers = [
+    "live: calls a real provider API; skipped unless the API key env var is set",
+    "slow: multi-process or timing tests",
+]
+filterwarnings = ["error::pytest.PytestUnraisableExceptionWarning"]
+
+[tool.coverage.run]
+branch = true
+source = ["llm_logs"]
+parallel = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "\\.\\.\\.",
+]
