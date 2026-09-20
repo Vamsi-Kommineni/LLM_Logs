@@ -1,0 +1,281 @@
+[
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": "",
+          "annotations": null,
+          "function_call": null,
+          "reasoning": null,
+          "role": "assistant",
+          "tool_calls": null,
+          "executed_tools": null
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": {
+      "id": "fixture-id",
+      "debug": null,
+      "seed": 1847378477,
+      "usage": null,
+      "usage_breakdown": null,
+      "error": null
+    }
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": "Need",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": " to",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": " call",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": " get",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": "_weather",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": ".",
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null,
+          "channel": "analysis"
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": null,
+          "role": null,
+          "tool_calls": [
+            {
+              "index": 0,
+              "id": "fixture-id",
+              "function": {
+                "arguments": "{\"city\":\"Paris\"}",
+                "name": "get_weather"
+              },
+              "type": "function"
+            }
+          ],
+          "executed_tools": null
+        },
+        "finish_reason": null,
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": null,
+    "x_groq": null
+  },
+  {
+    "id": "fixture-id",
+    "choices": [
+      {
+        "delta": {
+          "content": null,
+          "annotations": null,
+          "function_call": null,
+          "reasoning": null,
+          "role": null,
+          "tool_calls": null,
+          "executed_tools": null
+        },
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "logprobs": null
+      }
+    ],
+    "created": 0,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion.chunk",
+    "system_fingerprint": "fp_fixture",
+    "usage": {
+      "completion_tokens": 30,
+      "prompt_tokens": 126,
+      "total_tokens": 156,
+      "completion_time": 0.030597959,
+      "completion_tokens_details": {
+        "reasoning_tokens": 7
+      },
+      "prompt_time": 0.006015061,
+      "prompt_tokens_details": null,
+      "queue_time": 0.209688882,
+      "total_time": 0.03661302
+    },
+    "x_groq": {
+      "id": "fixture-id",
+      "debug": null,
+      "seed": null,
+      "usage": {
+        "completion_tokens": 30,
+        "prompt_tokens": 126,
+        "total_tokens": 156,
+        "completion_time": 0.030597959,
+        "completion_tokens_details": {
+          "reasoning_tokens": 7
+        },
+        "prompt_time": 0.006015061,
+        "prompt_tokens_details": null,
+        "queue_time": 0.209688882,
+        "total_time": 0.03661302
+      },
+      "usage_breakdown": null,
+      "error": null
+    }
+  }
+]

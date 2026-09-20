@@ -1,0 +1,93 @@
+[
+  {
+    "type": "response.created",
+    "sequence_number": 0,
+    "response": {
+      "id": "fixture-id",
+      "object": "response",
+      "created_at": 0,
+      "status": "in_progress",
+      "model": "gpt-fixture",
+      "error": null,
+      "incomplete_details": null,
+      "instructions": null,
+      "metadata": {},
+      "output": [],
+      "parallel_tool_calls": true,
+      "temperature": 1.0,
+      "tool_choice": "auto",
+      "tools": [],
+      "top_p": 1.0,
+      "usage": null
+    }
+  },
+  {
+    "type": "response.output_text.delta",
+    "sequence_number": 1,
+    "item_id": "msg_fixture",
+    "output_index": 1,
+    "content_index": 0,
+    "delta": "The answer",
+    "logprobs": []
+  },
+  {
+    "type": "response.output_text.delta",
+    "sequence_number": 2,
+    "item_id": "msg_fixture",
+    "output_index": 1,
+    "content_index": 0,
+    "delta": " is 4.",
+    "logprobs": []
+  },
+  {
+    "type": "response.completed",
+    "sequence_number": 3,
+    "response": {
+      "id": "fixture-id",
+      "object": "response",
+      "created_at": 0,
+      "status": "completed",
+      "model": "gpt-fixture",
+      "error": null,
+      "incomplete_details": null,
+      "instructions": null,
+      "metadata": {},
+      "output": [
+        {
+          "type": "reasoning",
+          "id": "rs_fixture",
+          "summary": []
+        },
+        {
+          "type": "message",
+          "id": "msg_fixture",
+          "status": "completed",
+          "role": "assistant",
+          "content": [
+            {
+              "type": "output_text",
+              "text": "The answer is 4.",
+              "annotations": []
+            }
+          ]
+        }
+      ],
+      "parallel_tool_calls": true,
+      "temperature": 1.0,
+      "tool_choice": "auto",
+      "tools": [],
+      "top_p": 1.0,
+      "usage": {
+        "input_tokens": 25,
+        "input_tokens_details": {
+          "cached_tokens": 0, "cache_write_tokens": 7
+        },
+        "output_tokens": 9,
+        "output_tokens_details": {
+          "reasoning_tokens": 6
+        },
+        "total_tokens": 34
+      }
+    }
+  }
+]

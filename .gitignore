@@ -1,0 +1,37 @@
+# Secrets: never commit real environment files
+.env
+.env.*
+!.env.example
+
+# Runtime output of the logger (contains prompts and completions)
+/logs/
+/Logs/
+*.db
+*.db-wal
+*.db-shm
+*.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Editor and machine-local settings (may contain local paths)
+.vscode/
+.idea/
+.claude/settings.local.json
+.DS_Store
